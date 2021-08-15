@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>bt HÀM</title>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+ 
+   
+      <!-- BS4 CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <!-- FONTAWSOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">    
+
+ 
+
+    
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    
+    
+
+  </head>
+  <body>
+    
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-3">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#bt1" role="tab"
+              aria-selected="true">BT1</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bt2" role="tab"
+              aria-selected="false">BT2</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#bt3" role="tab"
+              aria-selected="false">BT3</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#bt4" role="tab"
+              aria-selected="false">BT4</a>
+          
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="v-pills-tabContent">
+  
+            <div class="tab-pane fade show active" id="bt1" role="tabpanel" aria-labelledby="BT1-tab">
+              <div class="bt1_content">
+                <h2>BT1: Quản lý tuyển sinh</h2>
+                <form class="form">
+                  <di3 class="form-group my-4">
+                    <input type="number" class="form-control mr-3 text-center input_bt1 my-3" placeholder="Nhập điểm chuẩn">
+
+                    <input type="number" class="form-control input_inline mr-3 mt-3 input_bt1" placeholder="Nhập điểm môn thứ 1">
+                    <input type="number" class="form-control input_inline mr-3 mt-3 input_bt1" placeholder="Nhập điểm môn thứ 2">
+                    <input type="number" class="form-control input_inline mr-3 mt-3 input_bt1" placeholder="Nhập điểm môn thứ 3">
+                    <!-- <input type="text" class="form-control input_inline mr-3 mt-3 input_bt1" placeholder="Nhập khu vực ưu tiên">
+                    <input type="text" class="form-control input_inline mr-3 mt-3 input_bt1" placeholder="Nhập đối tượng ưu tiên"> -->
+
+                    <div class="khuVuc mt-4">
+                      <h3 class="text-primary">Mời bạn chọn khu vực</h3>
+                      <input type="radio" id="khuVucA" name="khuVuc" value="A">
+                      <label for="khuVucA" class="mr-3">Khu Vực A</label>
+                      <input type="radio" id="khuVucB" name="khuVuc" value="B">
+                      <label for="khuVucB" class="mr-3">Khu Vực B</label>
+                      <input type="radio" id="khuVucC" name="khuVuc" value="C">
+                      <label for="khuVucC" class="mr-3">Khu Vực C</label>
+                      <input type="radio" id="khuVucKhongUuTien" name="khuVuc" value="X">
+                      <label for="khuVucKhongUuTien" class="mr-3">Không thuộc khu vực ưu tiên</label>
+                    </div>
+
+
+                    <div class="doiTuong mt-4">
+                      <h3 class="text-primary">Mời bạn chọn đối tượng</h3>
+
+                      <input type="radio" id="doiTuong1" name="doiTuong" value="1">
+                      <label for="doiTuong1" class="mr-3">Đối tượng 1</label>
+                      <input type="radio" id="doiTuong2" name="doiTuong" value="2">
+                      <label for="doiTuong2" class="mr-3">Đối tượng 2</label>
+                      <input type="radio" id="doiTuong3" name="doiTuong" value="3">
+                      <label for="doiTuong3" class="mr-3">Đối tượng 3</label>
+                      <input type="radio" id="doiTuongKhongUuTien" name="doiTuong" value="0">
+                      <label for="doiTuongKhongUuTien" class="mr-3">Không thuộc đối tượng ưu tiên</label>
+                    </div>
+
+
+
+
+                  </di3>
+                  <button type="button" class="btn btn-success show_result_btn mt-3 d-block w-25 mx-auto">Show Result</button>
+  
+                </form>
+                <p class="show_result_text">
+                  KẾT QUẢ
+                </p>
+              </div>
+            </div>
+  
+  
+  
+            <div class="tab-pane fade" id="bt2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+  
+                <div class="bt2_content">
+                  <h2>BT2: Tính tiền điện </h2>
+                  <form class="form">
+                    <div class="form-group my-4">
+                    <input type="text" class="form-control input_inline mr-3 mt-3 input_bt2" placeholder="Nhập tên của bạn">
+
+                    <input type="number" class="form-control input_inline mr-3 mt-3 input_bt2" placeholder="Nhập vào số Kw">
+                      
+                    </div>
+                    <button type ="button" class="btn btn-success d-block show_result_btn w-25 mx-auto">Show Result</button>
+    
+                  </form>
+                  <p class="show_result_text">
+                    KẾT QUẢ
+                  </p>
+                </div>
+  
+                
+            </div>
+  
+  
+            <div class="tab-pane fade" id="bt3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="bt3_content">
+                <h2>BT3: TÍNH THUẾ THU NHẬP CÁ NHÂN</h2>
+                <form class="form">
+                  <div class="form-group my-4">
+                    <input type="text" class="form-control input_inline mr-3 input_bt3" placeholder="Nhập họ tên">
+                    <input type="number" class="form-control input_inline mr-3 input_bt3" placeholder="Nhập tổng thu nhập">
+                    <input type="number" class="form-control input_inline mr-3 input_bt3" placeholder="Nhập số ngươi phụ thuộc">
+                  </div>
+                  <button type ="button" class="btn btn-success d-block show_result_btn w-25 mx-auto">Show Result</button>
+
+  
+                </form>
+                <p class="show_result_text">
+                  KẾT QUẢ
+                </p>
+              </div>
+            </div>
+  
+  
+            <div class="tab-pane fade" id="bt4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <div class="bt4_content">
+                <h2>BT4: TÍNH TIỀN CÁP</h2>
+                <form class="form">
+                  <div class="form-group my-4">
+                    <input type="text" class="form-control input_inline mr-3 input_bt4" id="ma_KH" placeholder="Nhập mã khách hàng">
+                   <div class="loaiKH">
+                    <input type="radio" id="nhaDan" name="loaiKH" value="nhaDan">
+                    <label for="nhaDan" class="mr-3">Nhà Dân</label>
+                    <input type="radio" id="doanhNghiep" name="loaiKH" value="doanhNghiep">
+                    <label for="doanhNghiep" class="mr-3">Doanh Nghiệp</label>
+                   </div>
+                   <input type="text" class="form-control input_inline mr-3 mt-3 input_bt4" id="kenhCaoCap" placeholder="Nhập số kênh cao cấp">
+                    <input type="text" class="form-control input_inline mr-3 mt-3 input_bt4" id="input_ketNoi" placeholder="Nhập số kết nối">
+                  </div>
+                  <button type ="button" class="btn btn-success d-block show_result_btn w-25 mx-auto">Show Result</button>
+              
+  
+                </form>
+                <p class="show_result_text">
+                  KẾT QUẢ
+                </p>
+              </div>
+            </div>
+  
+           
+  
+        
+          </div>
+        </div>
+      </div>
+  
+    </main>
+
+ <!-- Jquery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ <!-- BS4  -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+ <!-- JS custom -->
+    
+  <script src="./assets/js/script.js"></script>
+
+
+    
+  </body>
+</html>

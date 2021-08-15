@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.input_inline {
+    width: auto ;
+    display: inline;
+}
+
+
+.show_result_text {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 30px;
+    border: green 2px solid;
+}
+
+
+
+.input_bt4 {
+    display: inline-block;
+    width: 40% !important;
+}
+
+#input_ketNoi {
+    /* display: none; */
+    visibility: hidden;
+    
+}
