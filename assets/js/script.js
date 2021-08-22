@@ -44,7 +44,7 @@ handleBT1 = (index) => {
   var diemMon3 = parseFloat(inputs_BT1_Array[3].value);
   var thongBao ="";
   var finalTxt ="";
-  console.log(diemChuan, diemMon1, diemMon2, diemMon3);
+  // console.log(diemChuan, diemMon1, diemMon2, diemMon3);
 
   var tongDiem = 0;
   var diem3mon =0;
@@ -128,25 +128,25 @@ handleBT2 = (index) => {
   var finalTxt ="";
   name = inputs_BT2_Array[0].value;
   kw = inputs_BT2_Array[1].value;
-  console.log(name, kw);
+  // console.log(name, kw);
   if(0< kw && kw <= 50) {
-    console.log("đoạn 1");
+    // console.log("đoạn 1");
     tongTien = kw * 500;
   } else if( 50 < kw && kw <=100) {
-    console.log("đoạn 2");
+    // console.log("đoạn 2");
 
     tongTien = 50 * 500 + (kw-50) * 650;
 
   }else if (100 <kw && kw <= 200) {
-    console.log("đoạn 3");
+    // console.log("đoạn 3");
 
     tongTien = 50 * 500 + 50 * 650 + (kw-100) * 850;
   } else if (200 <kw && kw <=  350) {
-    console.log("đoạn 4");
+    // console.log("đoạn 4");
 
     tongTien = 50 * 500 + 50 * 650 + 100 * 850 + (kw - 200) * 1100;
   } else {       // >350
-    console.log("đoạn 5");
+    // console.log("đoạn 5");
 
     tongTien =  50 * 500 + 50 * 650 + 100 * 850 + 150 * 1100 + (kw - 350) * 1300;
   }
@@ -171,7 +171,7 @@ handleBT3 = (index) => {
   var name = inputs_BT3_Array[0].value;
   var tongThuNhap = parseInt(inputs_BT3_Array[1].value);
   var nguoiPhuThuoc = parseInt(inputs_BT3_Array[2].value);
-  console.log(name, tongThuNhap, nguoiPhuThuoc);
+  // console.log(name, tongThuNhap, nguoiPhuThuoc);
   var finalTxt = "";
 
   var thueThuNhapCaNhan = 0;
@@ -179,33 +179,33 @@ handleBT3 = (index) => {
   var changeDonVi =0;
   thuNhapChiuThue = tongThuNhap - 4000000 - nguoiPhuThuoc*1600000;
   changeDonVi = thuNhapChiuThue/1000000;    //để dễ so sánh
-  console.log(name,tongThuNhap, nguoiPhuThuoc, thuNhapChiuThue, changeDonVi)
+  // console.log(name,tongThuNhap, nguoiPhuThuoc, thuNhapChiuThue, changeDonVi)
   if(0 < changeDonVi && changeDonVi <= 60) {
-    console.log('doan 1')
+    // console.log('doan 1')
     thueThuNhapCaNhan = thuNhapChiuThue * 0.05;
   } else if (60< changeDonVi && changeDonVi <=120) {
     thueThuNhapCaNhan = thuNhapChiuThue * 0.1;
-    console.log('doan 2')
+    // console.log('doan 2')
 
   } else if(120< changeDonVi && changeDonVi <=210) {
     thueThuNhapCaNhan = thuNhapChiuThue * 0.15;
-    console.log('doan 3')
+    // console.log('doan 3')
 
   } else if (210<changeDonVi && changeDonVi <= 384){
     thueThuNhapCaNhan = thuNhapChiuThue * 0.2;
-    console.log('doan 4')
+    // console.log('doan 4')
 
   }else if (384 < changeDonVi && changeDonVi <= 624){
     thueThuNhapCaNhan = thuNhapChiuThue * 0.25;
-    console.log('doan 5')
+    // console.log('doan 5')
 
   } else if (624 < changeDonVi && changeDonVi<=960){
     thueThuNhapCaNhan = thuNhapChiuThue * 0.3;
-    console.log('doan 6')
+    // console.log('doan 6')
 
   }else {
     thueThuNhapCaNhan = thuNhapChiuThue * 0.35;
-    console.log('else')
+    // console.log('else')
 
   }
 
@@ -267,7 +267,7 @@ var doanhNghiep = {
 
 
 handleBT4 = (index) => {
-  console.log('haha')
+  // console.log('haha')
  
   var maKH = document.getElementById('ma_KH').value;
   var loaiKH = "";
@@ -290,8 +290,8 @@ handleBT4 = (index) => {
     
   }
   
-  console.log(maKH, loaiKH, soKetNoi, soKenhCaoCap);
-  console.log(tongTien);
+  // console.log(maKH, loaiKH, soKetNoi, soKenhCaoCap);
+  // console.log(tongTien);
   finalTxt = "Tiền cap của khách hàng mã " + maKH +" là:" + "<span style = 'background-color: blue;' class = 'text-white mx-2'>"+ tongTien +"</span>" + "$";
   renderUI(index, finalTxt);
 
@@ -301,11 +301,11 @@ handleBT4 = (index) => {
 
 tinhTongTienCap = (loaiKH,phiHoaDon, phiCoBan, soKetNoi ,phiCaoCap, soKenhCaoCap) => {
   var tongTienCap = 0;
-  console.log('hàm tính tiền cap');
-  console.log('loại kh', loaiKH)
+  // console.log('hàm tính tiền cap');
+  // console.log('loại kh', loaiKH)
   switch(loaiKH) {
     case "nhaDan":
-      console.log('nhaDan');
+      // console.log('nhaDan');
       tongTienCap = phiHoaDon + phiCoBan + phiCaoCap * soKenhCaoCap;
       break;
     case "doanhNghiep":
@@ -314,6 +314,6 @@ tinhTongTienCap = (loaiKH,phiHoaDon, phiCoBan, soKetNoi ,phiCaoCap, soKenhCaoCap
     default:
       tongTienCap = 0;
   }
-  console.log('tiền cap -', tongTienCap);
+  // console.log('tiền cap -', tongTienCap);
   return tongTienCap;
 }
